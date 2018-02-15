@@ -24,7 +24,7 @@ while len(finalTweet) < TWEET_MAX_LEN_COUNT :
     if orderToPerform == "y":
         enteredTweet = getTweet()
         if len(enteredTweet) > TWEET_MAX_LEN_COUNT:
-            print("Tweet is too long. Max characters allowed is " + str(TWEET_MAX_LEN_COUNT) + ".")
+            print("Tweet is too long by " + str(len(enteredTweet) - TWEET_MAX_LEN_COUNT) + " characters. Max characters allowed is " + str(TWEET_MAX_LEN_COUNT) + ".")
             break
         else :
             orderToPerform = dealWihtEnteredTweet(enteredTweet)
